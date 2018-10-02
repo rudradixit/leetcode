@@ -14,7 +14,7 @@ class TestNumberOfIslands {
             {'0', '0', '0', '1', '1'}
         };
 
-        assertEquals(3, NumberOfIslands.numIslands(grid));
+        assertEquals(2, NumberOfIslands.numIslands(grid));
     }
 
     @Test
@@ -36,6 +36,18 @@ class TestNumberOfIslands {
             {'1', '1', '1', '1', '0'},
             {'1', '1', '1', '1', '1'},
             {'0', '0', '0', '0', '1'}
+        };
+
+        assertEquals(1, NumberOfIslands.numIslands(grid));
+    }
+
+    @Test
+    void testCase4() {
+        char[][] grid = {
+            {'1', '1', '1', '1', '1'},
+            {'1', '0', '0', '0', '1'},
+            {'1', '0', '0', '0', '1'},
+            {'1', '1', '1', '1', '1'}
         };
 
         assertEquals(1, NumberOfIslands.numIslands(grid));
